@@ -258,6 +258,10 @@ hr {
   font-size: 48px;
 }
 
+.pad {
+  margin: 0 10px;
+}
+
 @media screen and (max-width: 768px) {
   .pfp {
     margin: 0 auto;
