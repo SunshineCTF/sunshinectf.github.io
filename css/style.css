@@ -22,7 +22,7 @@ body {
 }
 
 #main-container {
-  margin-top: -2px; /* hide that nasty seam */
+  margin-top: 50px; 
   position: relative;
 }
 
@@ -30,15 +30,15 @@ body {
   background: #212529 !important;
 }
 
-#poster {
-  border: 2px solid white;
-  border-radius: 5px;
-  padding: 1vw 0 2vw;
-}
+/* #poster { */
+  /* border: 2px solid white; */
+  /* border-radius: 5px; */
+  /* padding: 1vw 0 2vw; */
+/* } */
 
-#logos{
-  margin-top: 3vw;
-}
+/*#logos{
+/*  margin-top: 3vw;
+}*/
 
 #main-text{
   padding: 3vw 0 0 0;
