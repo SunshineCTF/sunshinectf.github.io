@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630">
+  <title>SunshineCTF 2026 — September 26–28</title>
+  <desc>A 48-hour online Jeopardy CTF. Starts September 26 at 14:00 UTC and ends September 28 at 14:00 UTC. Hosted at BSides Orlando.</desc>
+  <rect width="1200" height="630" fill="#0b1c35"/>
+  <rect x="24" y="24" width="1152" height="582" fill="none" stroke="#2b4368" stroke-width="2"/>
+  <path d="M48 88V48H100 M1100 582H1152V542" fill="none" stroke="#3fc8d2" stroke-width="3"/>
+  <image x="300" y="48" width="600" height="339" xlink:href="sunshinectf26-home.png"/>
+  <text x="600" y="445" text-anchor="middle" font-family="Chakra Petch" font-weight="700" font-size="56" fill="#f1e7d2">SEPTEMBER 26–28, 2026</text>
+  <text x="600" y="497" text-anchor="middle" font-family="Space Grotesk" font-weight="600" font-size="30" letter-spacing="2" fill="#3fc8d2">48 HOURS · ONLINE · JEOPARDY CTF</text>
+  <path d="M120 526H1080" stroke="#2b4368"/>
+  <text x="120" y="567" font-family="Space Grotesk" font-size="24" fill="#f1e7d2">14:00 UTC · BSides Orlando</text>
+  <text x="1080" y="567" text-anchor="end" font-family="Chakra Petch" font-weight="700" font-size="26" fill="#f0891f">sunshinectf.org</text>
+</svg>
