@@ -55,3 +55,15 @@ Use the provided Python script to serve the website locally with a proper HTTP s
 - No browser console warnings/errors observed; logo and portrait images loaded.
 - Local schedule labels retain UTC and add the browser's locale/timezone. Checked Pacific, Eastern, Tokyo, and Kiritimati (next-day rollover), plus an unavailable-Intl fallback. Without JavaScript, the original UTC schedule remains readable.
 - Canonical and social URLs use the production domain from `CNAME`; the preview image becomes available at its production URL when this change is deployed.
+
+## Social preview card
+
+The homepage's Open Graph and Twitter metadata share an opaque 1200×630 PNG at `img/sunshinectf26-social.png`. Edit `img/sunshinectf26-social.svg` and regenerate with:
+
+```sh
+sh scripts/render-social-card.sh
+```
+
+The renderer requires `rsvg-convert`, fontconfig, and `woff2_decompress`. It uses the bundled fonts and existing homepage logo; temporary fonts/cache are removed afterward. Commit the generated PNG so hosting requires no rendering dependencies.
+
+Check image dimensions/opacity, title and description agreement, and that the September 26–28 dates and 14:00 UTC schedule match the event. The metadata follows https://ogp.me/; only the PNG is advertised to social crawlers. Test a fresh link after deployment: existing platform unfurls may retain cached metadata or images.
