@@ -151,27 +151,27 @@ code { color: var(--cyan); font-family: "Space Mono", monospace; font-size: .9em
 }
 .register-btn:hover { background: #ffa040; border-color: #ffa040; color: var(--bg); }
 .event-intro { max-width: 580px; margin: 1rem auto 0; color: var(--muted); }
-.conference-section { margin-top: 3.5rem; border: 1px solid var(--line); border-left: 3px solid var(--orange); background: var(--panel); }
-.conference-intro { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 2rem; padding: 2rem; }
+.event-information { display: grid; grid-template-columns: 1.15fr 1fr; gap: 2rem; align-items: start; margin-top: 3.5rem; }
+.conference-section { border: 1px solid var(--line); border-left: 3px solid var(--orange); background: var(--panel); }
+.conference-intro { display: grid; grid-template-columns: 1fr; align-items: center; gap: 1.5rem; padding: 2rem; }
 .conference-intro p { color: var(--muted); }
 .conference-art { display: block; }
 .conference-art img { display: block; width: 100%; height: auto; }
 .outline-btn { padding: .75rem 1rem; border: 1px solid var(--cyan); border-radius: 0; color: var(--cyan); font-weight: 700; }
 .outline-btn:hover { background: var(--cyan); color: var(--bg); }
 .conference-note { margin: 1rem 0 0; font-size: .85rem; }
-.competition-schedule { padding: 1.5rem 2rem; border-top: 1px solid var(--line); }
-.competition-schedule h3 { margin-bottom: 1.5rem; }
+.competition-schedule { margin-top: 2rem; padding: 1.5rem 0; border-block: 1px solid var(--line); }
+.competition-schedule h2 { margin-bottom: 1.5rem; font-size: 1.5rem; }
 .schedule-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); list-style: none; gap: 1.5rem; margin: 0; padding: 0; }
 .schedule-list li + li { border-left: 1px solid var(--line); padding-left: 1.5rem; }
 .schedule-list p { margin: .5rem 0 0; color: var(--muted); font-size: .85rem; }
 .schedule-list time { font-size: 1rem; }
-.participation-section { margin-top: 3.5rem; }
+.participation-section { padding: 2rem 0; }
 .participation-section h2 { margin-bottom: 1.5rem; }
-.participation-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; padding-left: 1.5rem; margin: 0; }
+.participation-steps { display: grid; grid-template-columns: 1fr; gap: 1.5rem; padding-left: 1.5rem; margin: 0; }
 .participation-steps li { padding-left: .3rem; }
 .participation-steps li::marker { color: var(--cyan); font-family: "Space Mono", monospace; }
 .participation-steps p { color: var(--muted); margin: 0; }
-.participation-help { padding-top: 1.25rem; margin-top: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); }
 .sponsors { margin: 3.5rem 0; text-align: center; }
 .sponsors h2 { margin-bottom: 1.5rem; }
 .sponsor-panel { border: 1px solid var(--line); border-left: 3px solid var(--orange); padding: 2.5rem 1.5rem; background: var(--panel); }
@@ -194,14 +194,23 @@ code { color: var(--cyan); font-family: "Space Mono", monospace; font-size: .9em
 .person a { font-size: .85rem; overflow-wrap: anywhere; }
 #admins .person { padding: 0 0 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
 #admins .pfp { width: 80px; height: 80px; }
+@media (min-width: 1200px) {
+  .event-hero { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 2rem; margin-top: 3rem; }
+  .event-hero .hero-logo { max-width: none; margin: 0; padding: 0; }
+  .event-hero .event-panel { max-width: none; margin: 0; padding: 2rem 1.5rem; }
+  .event-hero h1 { font-size: 2.75rem; }
+}
 @media (max-width: 991px) {
+  .event-information { grid-template-columns: 1fr; }
+  .participation-section { padding: 0; }
+  .participation-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
   .conference-intro { grid-template-columns: 1fr; }
   .conference-art { max-width: 600px; }
   #second-row { gap: 2rem; }
   .leads-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 767px) {
-  .conference-section, .participation-section { margin-top: 2.5rem; }
+  .event-information { margin-top: 2.5rem; }
   .conference-intro, .competition-schedule { padding: 1.5rem; }
   .schedule-list, .participation-steps { grid-template-columns: 1fr; gap: 1.25rem; }
   .schedule-list li + li { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); padding-top: 1.25rem; }

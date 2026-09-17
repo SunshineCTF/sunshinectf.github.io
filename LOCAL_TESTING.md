@@ -74,3 +74,5 @@ Check image dimensions/opacity, title and description agreement, and that the Se
 - The supplied BSides artwork is stored unchanged at `img/bsides-orlando-2026.png` (940×470).
 - Chrome visual review at 375, 768, and 1440 pixels covered conference artwork, schedule, and participation steps; no horizontal overflow or console warnings/errors observed. Keyboard focus reached the conference/registration and rules links. Exactly two local-time labels remain.
 - HTML parsing, asset references, existing link preservation, and unchanged team roster/social metadata checks passed.
+
+Layout refinement: the hero uses columns from 1200px, conference/participation from 992px, and the schedule spans the content width. Checked 375/768/992/1200/1440px for overflow and local-time labels; inspected desktop and mobile rendering and keyboard focus. No console warnings/errors observed. Removed the requested support paragraph and repeated conference-section registration link.
