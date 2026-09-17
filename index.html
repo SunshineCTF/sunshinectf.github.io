@@ -35,7 +35,7 @@
   <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles -->
-  <link rel="stylesheet" href="/css/style.css?v=8">
+  <link rel="stylesheet" href="/css/style.css?v=12">
   <link rel="stylesheet" href="/vendor/font-awesome/css/fontawesome.min.css" type='text/css'>
   <link rel="stylesheet" href="/vendor/font-awesome/css/all.min.css" type='text/css'>
 
@@ -67,6 +67,7 @@
   </nav>
 
   <main id="main-container" class="container" tabindex="-1">
+    <div class="event-hero">
     <div class="hero-logo">
       <a href="https://2026.sunshinectf.org/">
         <img id="poster" src="/img/sunshinectf26-home.png" alt="SunshineCTF 2026" width="1668" height="943" fetchpriority="high">
@@ -75,6 +76,9 @@
 
     <section class="event-panel" aria-labelledby="event-title">
       <h1 id="event-title">SunshineCTF 2026</h1>
+      <p class="event-intro">A 48-hour online Jeopardy-style capture-the-flag competition.
+        Solve cybersecurity challenges with your team, find flags, and earn points. Play from anywhere.</p>
+      <div class="event-facts">
       <div class="event-dates">
         <p><span class="detail-label"><i class="fa-solid fa-circle-play" aria-hidden="true"></i> Start</span>
           <time datetime="2026-09-26T14:00:00Z">2026-09-26 14:00 UTC</time></p>
@@ -83,14 +87,69 @@
       </div>
       <div class="evt-details">
         <p><i class="fa-solid fa-gamepad" aria-hidden="true"></i> <strong>CTF Type:</strong> Jeopardy</p>
-        <p><i class="fa-solid fa-tag" aria-hidden="true"></i> <strong>Categories:</strong> The usual suspects.</p>
+        <p><i class="fa-solid fa-tag" aria-hidden="true"></i> <strong>Categories:</strong> Web, Pwn (binary exploitation), Reverse Engineering, Forensics, and Misc.</p>
         <p><i class="fa-solid fa-flag" aria-hidden="true"></i> <strong>Flag Format:</strong> <code>sun{stuffs}</code></p>
         <p class="flag-warning"><strong>Warning: If a challenge does not specify a custom format, and you do not see
           <code>sun{</code> you have not found the flag yet!</strong></p>
       </div>
+      </div>
+      <div class="event-footer">
       <p class="infra-sponsor">2026 Infra sponsored by <a href="https://goo.gle/ctfsponsorship">goo.gle/ctfsponsorship</a></p>
       <a class="register-btn btn" href="https://2026.sunshinectf.org">Register Now</a>
+      </div>
     </section>
+
+    </div>
+
+    <div class="event-information">
+    <section class="conference-section" aria-labelledby="conference-title">
+      <div class="conference-intro">
+        <div>
+          <h2 id="conference-title">Joining us in Orlando?</h2>
+          <p>SunshineCTF launches in person at BSides Orlando on Saturday, September 26, 2026,
+            at Full Sail University. Join us at the conference or compete online worldwide.</p>
+          <p>In-person awards will be presented during the BSides Orlando closing ceremony.
+            The competition continues online through Monday, September 28.</p>
+          <a class="outline-btn btn" href="https://bsidesorlando.org/">Explore BSides Orlando <span aria-hidden="true">↗</span></a>
+          <p class="conference-note">Conference tickets and CTF registration are separate.</p>
+        </div>
+        <a class="conference-art" href="https://bsidesorlando.org/">
+          <img src="/img/bsides-orlando-2026.png" alt="BSides Orlando 2026 conference — Saturday, September 26, 2026" width="940" height="470" loading="lazy">
+        </a>
+      </div>
+    </section>
+
+    <section class="participation-section" aria-labelledby="participation-title">
+      <h2 id="participation-title">How to participate</h2>
+      <ol class="participation-steps">
+        <li><h3>Register an account</h3>
+          <p>Head to the <a href="https://2026.sunshinectf.org/">competition platform</a> and register.
+            Read the <a href="https://2026.sunshinectf.org/rules">competition rules</a> before playing.</p></li>
+        <li><h3>Get your team together</h3>
+          <p>Create a team or join your teammates on the platform.
+            Each person may participate on only one registered team.</p></li>
+        <li><h3>Solve and submit</h3>
+          <p>When the event begins, open the <a href="https://2026.sunshinectf.org/challenges">challenge board</a>.
+            Solve challenges and submit flags through the competition platform to earn points.</p></li>
+      </ol>
+    </section>
+
+    </div>
+
+      <section class="competition-schedule" aria-labelledby="schedule-title">
+        <h2 id="schedule-title">Kicking off at BSides Orlando, continuing online.</h2>
+        <ol class="schedule-list">
+          <li><span class="detail-label">CTF kickoff · Saturday</span>
+            <time datetime="2026-09-26T14:00:00Z">Sep 26 · 14:00 UTC</time>
+            <p>10:00 AM Eastern<br>In Orlando and online worldwide</p></li>
+          <li><span class="detail-label">In-person awards · Saturday</span>
+            <strong>BSides closing ceremony</strong>
+            <p>September 26<br>Online competition continues</p></li>
+          <li><span class="detail-label">Online finish · Monday</span>
+            <time datetime="2026-09-28T14:00:00Z">Sep 28 · 14:00 UTC</time>
+            <p>10:00 AM Eastern<br>48 hours after kickoff</p></li>
+        </ol>
+      </section>
 
     <section class="sponsors" aria-labelledby="sponsor-title">
       <h2 id="sponsor-title">Sponsored By</h2>
@@ -164,6 +223,6 @@
   </main>
   <script src="/vendor/jquery/jquery.min.js"></script>
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/js/local-times.js" defer></script>
+  <script src="/js/local-times.js?v=2" defer></script>
 </body>
 </html>

@@ -67,3 +67,12 @@ sh scripts/render-social-card.sh
 The renderer requires `rsvg-convert`, fontconfig, and `woff2_decompress`. It uses the bundled fonts and existing homepage logo; temporary fonts/cache are removed afterward. Commit the generated PNG so hosting requires no rendering dependencies.
 
 Check image dimensions/opacity, title and description agreement, and that the September 26–28 dates and 14:00 UTC schedule match the event. The metadata follows https://ogp.me/; only the PNG is advertised to social crawlers. Test a fresh link after deployment: existing platform unfurls may retain cached metadata or images.
+
+## Event participation additions (2026-09-16)
+
+- Source checks: https://2026.sunshinectf.org/ confirms in-person kickoff, closing-ceremony awards, and the Monday online finish; `/rules` confirms team participation and private Discord reporting. https://bsidesorlando.org/ confirms September 26 and Full Sail University. The category list matches the five published category leads.
+- The supplied BSides artwork is stored unchanged at `img/bsides-orlando-2026.png` (940×470).
+- Chrome visual review at 375, 768, and 1440 pixels covered conference artwork, schedule, and participation steps; no horizontal overflow or console warnings/errors observed. Keyboard focus reached the conference/registration and rules links. Exactly two local-time labels remain.
+- HTML parsing, asset references, existing link preservation, and unchanged team roster/social metadata checks passed.
+
+Layout refinement: use a centered 520px logo above a full-width event panel. At 992px and wider, dates and challenge details form internal columns; conference copy and art sit side by side. Participation uses three columns from 768px. Checked 375/768/1024/1440px for overflow and exactly two local-time labels, with desktop/mobile visual review. All visible text remains unchanged from the prior copy refinement.

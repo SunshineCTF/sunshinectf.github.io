@@ -16,8 +16,9 @@
 
       const localTime = document.createElement("span");
       localTime.className = "local-time";
-      localTime.textContent = `Your time: ${formatter.format(date)}`;
-      time.after(localTime);
+      localTime.textContent = formatter.format(date);
+      time.before(localTime);
+      time.classList.add("utc-time");
     });
   } catch {
     // The original UTC times remain the authoritative fallback.
