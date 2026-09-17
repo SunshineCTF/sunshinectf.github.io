@@ -47,3 +47,11 @@ Use the provided Python script to serve the website locally with a proper HTTP s
 
 - Python 3 (usually pre-installed on Linux/macOS)
 - No additional packages required
+
+## Retheme verification (2026-09-16)
+
+- Chrome review at 375×812, 768×1024, and 1440×1000: event details, sponsor artwork, and team layout render without horizontal overflow.
+- Keyboard checks: visible skip-link focus, focus moves to main content below the fixed header, and the mobile navigation opens/closes with Enter. The Discord link is reachable with Tab and has a visible focus outline.
+- No browser console warnings/errors observed; logo and portrait images loaded.
+- Local schedule labels retain UTC and add the browser's locale/timezone. Checked Pacific, Eastern, Tokyo, and Kiritimati (next-day rollover), plus an unavailable-Intl fallback. Without JavaScript, the original UTC schedule remains readable.
+- Canonical and social URLs use the production domain from `CNAME`; the preview image becomes available at its production URL when this change is deployed.

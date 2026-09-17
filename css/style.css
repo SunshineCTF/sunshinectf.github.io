@@ -79,7 +79,7 @@ h3 { font-size: 1.2rem; }
   color: var(--bg);
 }
 .skip-link:focus { top: 1rem; color: var(--bg); }
-#main-container { padding-bottom: 4rem; }
+#main-container { padding-bottom: 4rem; scroll-margin-top: 94px; }
 .hero-logo { max-width: 730px; margin: 3.5rem auto 2.5rem; padding: 0 1.5rem; text-align: center; }
 .hero-logo a { display: inline-block; }
 #poster { display: block; width: 100%; height: auto; }
@@ -130,6 +130,7 @@ h3 { font-size: 1.2rem; }
   text-transform: uppercase;
 }
 time { font-family: "Chakra Petch", sans-serif; font-weight: 700; font-size: 1.15rem; }
+.local-time { display: block; margin-top: .4rem; color: var(--muted); font-size: .8rem; }
 .evt-details > p { margin-bottom: .6rem; }
 .evt-details i { color: var(--cyan); margin-right: .3rem; }
 code { color: var(--cyan); font-family: "Space Mono", monospace; font-size: .9em; }
